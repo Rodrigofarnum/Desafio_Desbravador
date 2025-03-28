@@ -1,0 +1,79 @@
+# Desafio Desbravador - Software de Gestão
+
+Este projeto tem como objetivo criar cenários de teste para validar a função que reserva hotéis no site da Desbravador, garantindo que os principais fluxos de interação sejam realizados corretamente e que as regras de negócios sejam respeitadas.
+
+---
+
+## Regras de Negócios
+
+As regras de negócios solicitadas são:
+
+1. Verificar a disponibilidade de reserva para no mínimo 03 dias.
+2. Selecionar o quarto STANDARD ST1.
+3. Adicionar na reserva 02 Adultos e 01 criança até 05 anos.
+4. Informar os hóspedes da reserva.
+5. Efetuar pagamento com cartão de crédito descrito no Cenário de Teste 005.
+
+---
+
+## Tecnologias Utilizadas
+
+- Gravador de Passos do Windows: Usado para gerar as evidências dos testes e capturar os fluxos de interação.
+
+---
+
+## Cenários de Teste
+
+### Cenário 001: Contato
+- **Criticidade**: Alta  
+- **Descrição**: É de extrema importância para evitar uma insatisfação ou declínio da reserva. Caso o cliente tenha dúvidas ou dificuldades para realizar a reserva, os meios de contatos devem estar visíveis e clicáveis.  
+- **Link para o Cenário de Teste**: [Cenário 001 - Contato](https://github.com/Rodrigofarnum/Desafio_Desbravador/blob/main/Cen%C3%A1rios%20de%20Teste/Cen%C3%A1rio%20de%20Teste%20001%20-%20Contato.pdf)
+
+---
+
+### Cenário 002: Agendamento
+- **Criticidade**: Alta  
+- **Descrição**: É a operação que dá início à reserva, onde o cliente informa quantos dias deseja reservar e a quantidade de participantes. Por se tratar da função que recebe os valores e verifica a disponibilidade, precisa ser mapeada.  
+- **Link para o Cenário de Teste**: [Cenário 002 - Agendamento](https://github.com/Rodrigofarnum/Desafio_Desbravador/blob/main/Cen%C3%A1rios%20de%20Teste/Cen%C3%A1rio%20de%20Teste%20002%20-%20Agendamento.pdf)
+
+---
+
+### Cenário 003: Acomodações
+- **Criticidade**: Alta  
+- **Descrição**: Demonstra as acomodações disponíveis e os valores a serem pagos. Os valores devem atualizar na tela em tempo real para que o usuário prossiga com a operação. Por se tratar do catálogo de acomodações, precisa ser mapeada.  
+- **Link para o Cenário de Teste**: [Cenário 003 - Acomodações](https://github.com/Rodrigofarnum/Desafio_Desbravador/blob/main/Cen%C3%A1rios%20de%20Teste/Cen%C3%A1rio%20de%20Teste%20003%20-%20Acomoda%C3%A7%C3%B5es.pdf)
+
+---
+
+### Cenário 004: Informações
+- **Criticidade**: Média  
+- **Descrição**: Este cenário valida os campos de informações pessoais do cliente, conforme as regras de negócio. Ele assegura que todos os dados essenciais sejam capturados e que o processo de preenchimento seja claro.  
+- **Link para o Cenário de Teste**: [Cenário 004 - Informações](https://github.com/Rodrigofarnum/Desafio_Desbravador/blob/main/Cen%C3%A1rios%20de%20Teste/Cen%C3%A1rio%20de%20Teste%20004%20-%20Informa%C3%A7%C3%B5es.pdf)
+
+---
+
+### Cenário 005: Pagamento
+- **Criticidade**: Alta  
+- **Descrição**: O teste de pagamento é crucial para concluir a reserva. Ele garante que a transação seja realizada de forma segura e sem erros, minimizando o risco de impactos financeiros negativos para o cliente.  
+- **Link para o Cenário de Teste**: [Cenário 005 - Pagamento](https://github.com/Rodrigofarnum/Desafio_Desbravador/blob/main/Cen%C3%A1rios%20de%20Teste/Cen%C3%A1rio%20de%20Teste%20005%20-%20Pagamento.pdf)
+
+---
+
+## Evidências de Teste
+
+- **Cenário 001**: [Evidência - Cenário 001](https://github.com/Rodrigofarnum/Desafio_Desbravador/blob/main/Evid%C3%AAncias%20de%20Teste/Cen%C3%A1rio%20de%20Teste%20001.pdf)
+- **Cenário 002**: [Evidência - Cenário 002](https://github.com/Rodrigofarnum/Desafio_Desbravador/blob/main/Evid%C3%AAncias%20de%20Teste/Cen%C3%A1rio%20de%20Teste%20002.pdf)
+- **Cenário 003**: [Evidência - Cenário 003](https://github.com/Rodrigofarnum/Desafio_Desbravador/blob/main/Evid%C3%AAncias%20de%20Teste/Cen%C3%A1rio%20de%20Teste%20003.pdf)
+- **Cenário 004**: [Evidência - Cenário 004](https://github.com/Rodrigofarnum/Desafio_Desbravador/blob/main/Evid%C3%AAncias%20de%20Teste/Cen%C3%A1rio%20de%20Teste%20004.pdf)
+- **Cenário 005**: [Evidência - Cenário 005](https://github.com/Rodrigofarnum/Desafio_Desbravador/blob/main/Evid%C3%AAncias%20de%20Teste/Cen%C3%A1rio%20de%20Teste%20005.pdf)
+
+---
+
+## Contribuições Futuras
+
+1. Aumentar a cobertura de testes.
+2. Automatizar os Cenários.
+3. Incluir na rotina dos testes de sanidade.
+4. Incluir no CI/CD.
+
+---
